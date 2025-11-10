@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tu Nombre | Desarrolladora Front-End</title>
+  <style>
+    /* Reset básico y variables de estilo */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --light: #f9fafb;
+      --dark: #111827;
+      --gray: #6b7280;
+      --white: #ffffff;
+      --border-radius: 8px;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background-color: var(--light);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 0 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin: 2.5rem 0 1.5rem;
+      color: var(--dark);
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+      font-size: 1.125rem;
+      color: var(--gray);
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--border-radius);
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.2s;
+      margin-top: 1rem;
+    }
+
+    .btn:hover {
+      background-color: var(--primary-dark);
+    }
+
+    .section {
+      padding: 2rem 0;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .skills div {
+      background: white;
+      padding: 1rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      display: flex;
+      align-items: center;
+    }
+
+    .skills div::before {
+      content: "✓";
+      color: var(--primary);
+      font-weight: bold;
+      margin-right: 0.75rem;
+      font-size: 1.25rem;
+    }
+
+    .project {
+      background: white;
+      padding: 1.5rem;
+      border-radius: var(--border-radius);
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+
+    .project a {
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      color: var(--gray);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .container {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Hero -->
+    <header>
+      <h1>Desarrolladora Web Front-End<br>con Habilidades en Python</h1>
+      <p>Creo interfaces modernas, responsivas y fáciles de usar.<br>Actualmente expandiendo mis habilidades con Python para soluciones más completas.</p>
+      <a href="https://www.upwork.com/freelancers/~017c2be2676a8218a1?mp_source=share" class="btn">Contrátame en Upwork</a>
+    </header>
+
+    <!-- Sobre mí -->
+    <section class="section">
+      <h2>Sobre mí</h2>
+      <p>Soy una desarrolladora web apasionada por el front-end, con experiencia en HTML, CSS, JavaScript y frameworks como React. Me encanta transformar ideas en experiencias digitales atractivas y funcionales.</p>
+      <p>Actualmente estoy finalizando un curso de Python, lo que me permite entender mejor el lado del back-end y colaborar de forma más integral en proyectos web. Aunque aún no soy experta en Python, tengo los fundamentos sólidos para integrar conocimientos full-stack en mis soluciones.</p>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="section">
+      <h2>Habilidades</h2>
+      <div class="skills">
+        <div>HTML5 / CSS3 / Sass</div>
+        <div>JavaScript (ES6+)</div>
+        <div>React / Next.js</div>
+        <div>Diseño Responsive</div>
+        <div>Git / GitHub</div>
+        <div>Python (Fundamentos: sintaxis, estructuras de datos, APIs básicas)</div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section class="section">
+      <h2>Proyectos Destacados</h2>
+      <div class="project">
+        <h3>Aplicación de Tareas con React</h3>
+        <p>Una app interactiva con lista de tareas, almacenamiento local y UI moderna.</p>
+        <a href="https://github.com/tu-usuario/todo-react" target="_blank">Ver en GitHub</a>
+      </div>
+      <div class="project">
+        <h3>Portafolio Personal</h3>
+        <p>Landing page responsive construida con HTML, CSS y JavaScript puro.</p>
+        <a href="https://tu-dominio.com" target="_blank">Ver demo</a>
+      </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="section" style="text-align: center;">
+      <h2>¿Listo para construir algo increíble?</h2>
+      <p>Estoy disponible para nuevos proyectos en Upwork. ¡Hablemos!</p>
+      <a href="https://www.upwork.com/freelancers/~017c2be2676a8218a1?mp_source=share" class="btn">Contrátame ahora</a>
+    </section>
+
+    <footer>
+      <p>© 2025 Elizabeth Jiménez Todos los derechos reservados.</p>
+    </footer>
+  </div>
+</body>
+</html>
